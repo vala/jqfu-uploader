@@ -73,15 +73,24 @@
     // On progress event of each file data uploading
     uploadProgress: function(data) {
       var progress = parseInt(data.loaded / data.total * 100, 10) + '%';
+      this.setFileProgressTo(
+        this.$files_list.find('#file-' + data.uid), progress
+      );
+    },
+
+    // Set-progress helper
+    setFileProgressTo: function($file_node, progress) {
       // Set progress ratio and bar size
-      this.$files_list.find('#file-' + data.uid)
+      $file_node
         .find('.progress-ratio').text(progress).end()
         .find('.progress-bar').css('width', progress);
     },
 
     // Just set success class when upload finished
     uploadDone: function(data) {
-      this.$files_list.find('#file-' + data.uid).addClass('success');
+      var $el = this.$files_list.find('#file-' + data.uid);
+      $el.addClass('success');
+      this.setFileProgressTo($el, '100%');
     }
   };
 
