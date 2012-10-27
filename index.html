@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File upload test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.9.1.custom.min.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <!-- Javascripts -->
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </head>
+
+  <body>
+    <!-- Upload form -->
+    <form action="" method="post" id="upload-form">
+      <h1>File upload test</h1>
+      <!-- Drop zone -->
+      <div id="drop-zone">
+        <div class="placeholder">
+          Drop your files here
+        </div>
+      </div>
+      <!-- File input and submit button -->
+      <div id="controls-zone">
+        <div class="controls">
+          <input type="file" name="files[]" id="file-upload-input">
+        </div>
+        <div class="form-actions">
+          <button type="submit" id="submit-button">
+            <span class="ui-icon ui-icon-document"></span>
+            Upload your files
+          </button>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+
+      <!-- Files list container -->
+      <div id="files-container" class="log">
+        <h2>Files</h2>
+        <ul id="files-list">
+          <!-- Files will be added here -->
+        </ul>
+      </div>
+    </form>
+  </body>
+</html>

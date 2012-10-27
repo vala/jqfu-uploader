@@ -1,0 +1,138 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial;
+  font-size: 14px;
+}
+
+.clearfix {
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.log {
+  background: #F5F5F5;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid #CCC;
+}
+
+#upload-form {
+  width: 600px;
+  margin: 20px auto 0;
+  box-shadow: 0 0 5px #CCC;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 1px 1px 2px #DDD;
+  color: #555;
+}
+
+#drop-zone {
+  width: 100%;
+  height: 100px;
+  border: 2px dotted #CCC;
+  background: #EEE;
+  border-radius: 10px;
+}
+
+#drop-zone .placeholder {
+  margin: 40px auto;
+  height: 20px;
+  padding: 0;
+  font-size: 1.5em;
+  color: #AAA;
+  text-align: center;
+}
+
+#controls-zone {
+  margin-top: 10px;
+}
+
+.controls {
+  float: left;
+}
+
+.form-actions {
+  text-align: center;
+  float: right;
+}
+
+.form-actions #submit-button {
+  border-radius: 0;
+  border: 1px solid #CCC;
+  background: #EEE;
+  box-shadow: none;
+  cusor: pointer;
+  height: 30px;
+  font-size: 13px;
+}
+
+.form-actions #submit-button .ui-icon {
+  float: left;
+  margin: -2px 2px 0 0;
+}
+
+/* Files list zone */
+
+#files-container {
+  margin: 10px 0;
+}
+
+#files-container h2 {
+  margin: 0 0 5px 0;
+  color: #666;
+}
+
+#files-list {
+  padding: 0;
+  list-style: none;
+}
+
+#files-list .file {
+  border: 1px solid #DDD;
+  padding: 10px;
+  color: #09A0B8;
+}
+
+#files-list .file.pending {
+  color: #E07E1B;
+}
+
+#files-list .file.success {
+  color: #089919;
+}
+
+#files-list .file .file-name {
+  width: 250px;
+  float: left;
+}
+
+#files-list .file .progress-ratio {
+  float: left;
+  width: 50px;
+  font-size: 0.8em;
+}
+
+#files-list .file .progress-container {
+  background: #CCC;
+  border: 1px solid #BBB;
+  box-shadow: 0 0 4px #AAA inset;
+  width: 200px;
+  float: right;
+  height: 15px;
+}
+
+#files-list .file .progress-container .progress-bar {
+  background: #09A0B8;
+  width: 0%;
+  height: 100%;
+}
+
+#files-list .file.success .progress-container .progress-bar {
+  background: #089919;
+}
